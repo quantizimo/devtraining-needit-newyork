@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_58872_needit.HelloWorld</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>HelloWorld</name>
+        <script><![CDATA[var HelloWorld = Class.create();
+HelloWorld.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	helloWorld:function() { return "Hello " + this.getParameter('xxx') + "!"; } ,
+   _privateFunction: function() { // this function is not client callable     
+    },
+    type: 'HelloWorld'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-13 21:42:00</sys_created_on>
+        <sys_id>af222e20db1f10106c6064d7489619a5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>HelloWorld</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_af222e20db1f10106c6064d7489619a5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-14 19:37:21</sys_updated_on>
+    </sys_script_include>
+</record_update>
